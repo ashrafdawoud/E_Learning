@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterApp.HomePageActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/HomeViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tab">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="@drawable/tab_layout_background"
+            android:layout_alignParentBottom="true"
+            android:elevation="16dp"
+            app:tabTextColor="@color/unselected"
+            app:tabSelectedTextColor="@color/selected"
+            app:tabIndicatorColor="@color/selected"
+            android:paddingTop="5dp"
+            >
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

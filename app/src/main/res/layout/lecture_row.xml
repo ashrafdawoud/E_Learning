@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="10dp"
+    android:id="@+id/item"
+    >
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/subject_rounded_item">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0.5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lecture One"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginTop="2.5dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/youtube"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lecture video name"
+                android:textSize="20dp"
+                android:textColor="#000"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2.5dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_pdf"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lecture pdf name"
+                android:textSize="20dp"
+                android:textColor="#000"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
