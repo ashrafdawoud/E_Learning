@@ -62,9 +62,7 @@
                    <ImageView
                        android:layout_width="match_parent"
                        android:layout_height="140dp"
-
-                       android:src="@drawable/ic_matrial"
-                       />
+                       android:src="@drawable/ic_matrial" />
                </RelativeLayout>
                <TextView
                    android:layout_width="match_parent"
@@ -137,6 +135,7 @@
         android:layout_weight="1"
         android:layout_marginBottom="50dp">
         <LinearLayout
+            android:id="@+id/questionbank"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:orientation="horizontal"
@@ -151,6 +150,7 @@
             android:elevation="5dp"
             android:layout_weight="1"
             android:background="@drawable/background_lines"
+
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -171,7 +171,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Question Bank"
+                    android:text="Answered Question"
                     android:layout_margin="2dp"
                     android:textSize="18dp"
                     android:textColor="@color/selected"
@@ -181,6 +181,7 @@
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/asked_q"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:orientation="horizontal"
@@ -214,7 +215,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Questionnaire"
+                    android:text="Asked Questions"
                     android:layout_margin="2dp"
                     android:textSize="18dp"
                     android:textStyle="bold"

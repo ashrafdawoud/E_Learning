@@ -20,6 +20,8 @@ import com.example.bfci.Adapters.SubjectAdapter;
 import com.example.bfci.EnterApp.Login;
 import com.example.bfci.EnterApp.Signup_Activity;
 import com.example.bfci.R;
+import com.example.bfci.SubjectDetails.AskedQuestionActivity;
+import com.example.bfci.SubjectDetails.QuestionBankActivity;
 
 
 public class CourceFragment extends Fragment {
@@ -43,6 +45,22 @@ public class CourceFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getActivity(), AnnouncementActivity.class);
+                startActivity(intent);
+            }
+        });
+        LinearLayout questionbank =view.findViewById(R.id.questionbank);
+        questionbank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), QuestionBankActivity.class);
+                startActivity(intent);
+            }
+        });
+        LinearLayout asked =view.findViewById(R.id.asked_q);
+        asked.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), AskedQuestionActivity.class);
                 startActivity(intent);
             }
         });

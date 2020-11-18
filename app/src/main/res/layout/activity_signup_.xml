@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnterApp.Signup_Activity"
-    android:background="@drawable/blue_login_background">
+   >
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:tint="@color/blue"
+        android:layout_margin="5dp"
+        android:onClick="back2"
+        />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,7 +28,6 @@
         android:layout_marginEnd="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
-
         android:src="@drawable/ic_computer_engineer_login"
         android:scaleType="centerCrop"
         />
@@ -37,7 +43,7 @@
         android:layout_marginBottom="40dp"
         >
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/name1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext_background"
@@ -49,7 +55,7 @@
             android:inputType="textEmailAddress"
             />
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/email1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext_background"
@@ -62,7 +68,7 @@
             />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/password1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext_background"
@@ -74,7 +80,7 @@
             android:inputType="textPassword"
             />
         <EditText
-            android:id="@+id/Rpassword"
+            android:id="@+id/Rpassword1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext_background"
@@ -86,6 +92,7 @@
             android:inputType="textPassword"
             />
         <Button
+            android:onClick="signup"
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="50dp"

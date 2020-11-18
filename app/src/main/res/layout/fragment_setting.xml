@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ececec"
     tools:context=".HomeFragments.SettingFragment">
 <LinearLayout
     android:layout_width="match_parent"
@@ -27,16 +28,18 @@
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/useravater"
+            android:src="@drawable/ic_account_circle_black_24dp"
             android:layout_gravity="center_horizontal"
             />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ashraf Dawoud"
+                android:text=" Dawoud"
                 android:textColor="#fff"
                 android:textSize="25dp"
                 android:textStyle="bold"
+                android:textAlignment="center"
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
     </RelativeLayout>
@@ -82,8 +85,8 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:layout_margin="15dp"
+            android:visibility="invisible"
             android:foreground="?attr/selectableItemBackground"
-
             >
             <TextView
                 android:layout_width="match_parent"
@@ -121,6 +124,7 @@
                 android:layout_weight="0.5"
                 android:textStyle="bold"/>
             <TextView
+                android:id="@+id/tttt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="first"
@@ -148,6 +152,7 @@
             android:src="@drawable/ic_email_black_24dp"
             android:padding="5dp"/>
         <TextView
+            android:id="@+id/emaildetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ashrafdawoud@gmail.com"
@@ -157,6 +162,7 @@
             />
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/changePassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -182,6 +188,7 @@
             />
     </LinearLayout>
     <LinearLayout
+        android:visibility="gone"
         android:id="@+id/contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

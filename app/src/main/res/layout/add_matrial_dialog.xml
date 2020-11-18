@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cournerd_background"
+    android:padding="10dp"
+    >
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="top"
+        android:padding="5dp"
+        android:background="@drawable/textbox_background"
+        android:layout_margin="10dp"
+        android:elevation="15dp"
+        android:hint="Question"
+        android:paddingStart="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/matrial"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            />
+        <Button
+            android:id="@+id/send"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cournerd_background"
+            android:backgroundTint="#58B6E2"
+            android:layout_margin="2dp"
+            android:text="Save"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:onClick="search"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

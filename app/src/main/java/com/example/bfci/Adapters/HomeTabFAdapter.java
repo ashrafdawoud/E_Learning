@@ -46,9 +46,6 @@ public class HomeTabFAdapter extends FragmentPagerAdapter {
                 //  tab.getTabAt (1).setIcon (R.drawable.ic_whatshot_red_24dp);
                 return new NotfyFragment();
             case 2 :
-                // tab.getTabAt (2).setIcon (R.drawable.ic_shopping_cart_red_24dp);
-                return new ChatFragment ();
-            case 3 :
                 //   tab.getTabAt (3).setIcon (R.drawable.ic_account_box_red_24dp);
                 return new SettingFragment();
             default:return new CourceFragment ();
@@ -57,22 +54,20 @@ public class HomeTabFAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
     //to desplay icons to tab layout
     public void seticons(){
         tab.getTabAt (0).setIcon (R.drawable.ic_home_black_24dp);
         tab.getTabAt (1).setIcon (R.drawable.ic_notifications_active_black_24dp);
-        tab.getTabAt (2).setIcon (R.drawable.ic_chat_black_24dp);
-        tab.getTabAt (3).setIcon (R.drawable.ic_account_circle_black_24dp);
+        tab.getTabAt (2).setIcon (R.drawable.ic_account_circle_black_24dp);
         ////
 
 
         //text
         tab.getTabAt (0).setText ("Home");
         tab.getTabAt (1).setText ("notification");
-        tab.getTabAt (2).setText ("chat");
-        tab.getTabAt (3).setText ("Profile");
+        tab.getTabAt (2).setText ("Profile");
 
 
 

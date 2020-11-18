@@ -45,7 +45,6 @@ public class HomePageActivity extends AppCompatActivity {
 
         //دا عشان لو احنا بدانا الactivity من غير ال intent هيعمل crash
         try {
-
             Bundle i=getIntent().getExtras();
             if (i!=null) {
                 int position = (int) i.get("position");

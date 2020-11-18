@@ -29,10 +29,10 @@
             android:onClick="back"
             />
     </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subjectRecy"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/subjectRecy"
-        android:background="#fff"
-        />
+        android:background="#fff" />
 </LinearLayout>

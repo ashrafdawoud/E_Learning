@@ -22,6 +22,7 @@
             android:layout_gravity="center_vertical"
             >
             <TextView
+                android:id="@+id/docname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dr.Ahmed"
@@ -29,6 +30,7 @@
                 android:textStyle="bold"
                 android:textSize="23dp"/>
             <TextView
+                android:id="@+id/time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Mon 9/18/2017, 9:54 PM"
@@ -37,6 +39,7 @@
         </LinearLayout>
     </LinearLayout>
     <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Post-ironic shabby chic VHS, Marfa keytar flannel lomo try-hard keffiyeh cray. Actually fap fanny pack yr artisan trust fund. High Life dreamcatcher church-key gentrify. toast vinyl, cold-pressed try-hard blog authentic keffiyeh Helvetica lo-fi tilde Intelligentsia. Skateboard artisan letterpress before they sold out High Life messenger bag."

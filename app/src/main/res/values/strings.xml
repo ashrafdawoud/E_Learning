@@ -5,7 +5,13 @@
     <!-- Change the following strings as required -->
     <string name="back4app_app_id">jXc7ST8POtAADLYxGgUbeQxBMGHZdwbVn0IkSBB9</string>
     <string name="back4app_client_key">t0lcjBccnuBHOIWxR0gyd3jQMSPQP92QLyWycJFs</string>
-
+    <string-array name="matrial">
+        <item>All</item>
+        <item>Network</item>
+        <item>DataBase</item>
+        <item>Gis</item>
+        <item>Cloud</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -28,11 +28,37 @@
             android:onClick="back"
             />
     </RelativeLayout>
+    <TextView
+        android:id="@+id/availbale1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Quizes -----------------------------"
+        android:layout_below="@+id/header"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quiz"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/availbale1"/>
+    <TextView
+        android:id="@+id/availbale2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lectures -----------------------------------------"
+        android:layout_below="@+id/quiz"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+
+        />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/lecture_details"
-        android:layout_below="@+id/header"
+        android:layout_below="@+id/availbale2"
         android:layout_marginTop="5dp"
         android:background="@color/light_background"
         />
